@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/film-icon.png" type="image/x-icon">
+    <title>StreamNow</title>
+</head>
+   
+<body>
+    <div id="login">
+        <h1>StreamNow</h1>
+        <p>Sua próxima maratona começa aqui.</p>
+    
+        <div class="login-box">
+            <input type="text" id="username" placeholder="Nome">
+            
+            <div class="senha">
+                <input type="password" id="password" placeholder="Sobrenome">
+                <button type="button" onclick="mostrarSenha()" id="olho">👁️</button>
+            </div>
+
+            <button onclick="entrar()">Entrar</button>
+        </div>
+    </div>
+    <nav class="menu">
+            <div class="menu-item">
+                <button id="filme">Filmes</button>
+                <div id="menu-filme" class="list">
+                    <a href="#acao">Ação</a>
+                    <a href="#comedia">Comédia</a>
+                    <a href="#ficcao">Ficção</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#terror">Terror</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button id="serie">Séries</button>
+                <div id="menu-serie" class="list">
+                    <a href="#acao">Ação</a>
+                    <a href="#comedia">Comédia</a>
+                    <a href="#ficcao">Ficção</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#terror">Terror</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button id="anime">Animes</button>
+                <div id="menu-anime" class="list">
+                    <a href="#acao">Ação</a>
+                    <a href="#comedia">Comédia</a>
+                    <a href="#aventura">Aventura</a>
+                    <a href="#romance">Romance</a>
+                    <a href="#terror">Terror</a>
+                </div>
+            </div>
+
+            <div class="menu-right">
+                <div class="barra">
+                    <input type="text" id="searchInput" placeholder="Buscar...">
+                    <button onclick="buscar()">
+                        <img src="icone/lupa.png" alt="buscar" width="20">
+                    </button>
+                </div>
+            </div>
+        
+        
+    </nav>
+
+
+    <div id="principal">
+        <h3>Destaques da Semana</h3>
+        <section class="destaque">
+            <img src="imagem/filme/acao/anonimo.webp" alt="anonimo">
+            <img src="imagem/filme/comedia/curtindo-a-vida-adoidado.webp" alt="curtindo-a-vida-adoidado">
+            <img src="imagem/filme/ficcao/blade-runner-2049.png" alt="blade-runner-2049">
+            <img src="imagem/filme/romance/bonnie-e-clyde.jpg" alt="bonnie-e-clyde">
+            <img src="imagem/filme/terror/a-noite-dos-mortos-vivos.jpg" alt="a-noite-dos-mortos-vivos">
+        </section>
+
+        <div id="acao">
+            <h3>Ação</h3>
+            <section>
+                <img src="imagem/filme/acao/anonimo.webp" alt="anonimo">
+                <img src="imagem/filme/acao/duro-de-matar.jpg" alt="duro-de-matar">
+                <img src="imagem/filme/acao/madmax.png" alt="madmax">
+                <img src="imagem/filme/acao/missao-impossivel.jpg" alt="missao-impossivel">
+                <img src="imagem/filme/acao/protetor.jpg" alt="protetor">
+            </section>
+        </div>
+
+        <div id="comedia">
+            <h3>Comédia</h3>
+            <section>
+                <img src="imagem/filme/comedia/curtindo-a-vida-adoidado.webp" alt="curtindo-a-vida-adoidado">
+                <img src="imagem/filme/comedia/debi-e-loide.webp" alt="debi-e-loide">
+                <img src="imagem/filme/comedia/o-caca-fantasmas.webp" alt="o-caca-fantasmas">
+                <img src="imagem/filme/comedia/o-maskara.webp" alt="o-maskara">
+                <img src="imagem/filme/comedia/o-mentiroso.jpg" alt="o-mentiroso">
+            </section>
+        </div>
+
+        <div id="ficcao">
+            <h3>Ficção</h3>
+            <section>
+                <img src="imagem/filme/ficcao/blade-runner-2049.png" alt="blade-runner-2049">
+                <img src="imagem/filme/ficcao/de-volta-para-o-futuro.webp" alt="de-volta-para-o-futuro">
+                <img src="imagem/filme/ficcao/guerra-dos-mundos.jpg" alt="guerra-dos-mundos">
+                <img src="imagem/filme/ficcao/matrix.jpg" alt="matrix">
+                <img src="imagem/filme/ficcao/o-exterminador-do-futuro.jpg" alt="o-exterminador-do-futuro">
+                <img src="imagem/filme/ficcao/planeta-dos-macacos.webp" alt="planeta-dos-macacos">
+            </section>
+        </div>
+
+        <div id="romance">
+            <h3>Romance</h3>
+            <section>
+                <img src="imagem/filme/romance/antes-do-amanhecer.jpg" alt="antes-do-amanhecer">
+                <img src="imagem/filme/romance/bonnie-e-clyde.jpg" alt="bonnie-e-clyde">
+                <img src="imagem/filme/romance/casablanca.jpg" alt="casablanca">
+                <img src="imagem/filme/romance/diario-de-uma-paixao.jpg" alt="diario-de-uma-paixao">
+                <img src="imagem/filme/romance/simplesmente-acontece.jpg" alt="simplesmente-acontece">
+                <img src="imagem/filme/romance/titanic.jpg" alt="titanic">
+            </section>
+        </div>
+
+        <div id="terror">
+            <h3>Terror</h3>
+            <section>
+                <img src="imagem/filme/terror/a-noite-dos-mortos-vivos.jpg" alt="a-noite-dos-mortos-vivos">
+                <img src="imagem/filme/terror/halloween.jpg" alt="halloween">
+                <img src="imagem/filme/terror/o-exorcista.webp" alt="o-exorcista">
+                <img src="imagem/filme/terror/o-iluminado.jpg" alt="o-iluminado">
+                <img src="imagem/filme/terror/o-massacre-da-serra-eletrica.jpg" alt="o-massacre-da-serra-eletrica">
+                <img src="imagem/filme/terror/psicose.webp" alt="psicose">
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
