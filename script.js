@@ -56,3 +56,11 @@ menuAnimesBtn.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+
+
+
