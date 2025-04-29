@@ -52,3 +52,7 @@ menuAnimesBtn.addEventListener('click', () => {
     menuFilmes.style.display = 'none';
     menuSeries.style.display = 'none';
 });
+
+
+
+
