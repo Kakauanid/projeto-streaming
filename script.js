@@ -32,6 +32,7 @@ const menuSeries = document.getElementById('menu-series');
 const menuAnimesBtn = document.getElementById('menu-animes-btn');
 const menuAnimes = document.getElementById('menu-animes');
 
+/*
 // Filmes
 menuFilmesBtn.addEventListener('click', () => {
     menuFilmes.style.display = menuFilmes.style.display === 'block' ? 'none' : 'block';
@@ -52,7 +53,24 @@ menuAnimesBtn.addEventListener('click', () => {
     menuFilmes.style.display = 'none';
     menuSeries.style.display = 'none';
 });
+*/
 
+const imagens = document.querySelector('.carrossel-imagens');
+const bolinhas = document.querySelectorAll('.bolinha');
+
+bolinhas.forEach((bolinha, index) => {
+    bolinha.addEventListener('click', () => {
+        // Muda a imagem
+        imagens.style.transform = `translateX(-${index * 100}vw)`;
+
+        // Atualiza bolinhas
+        bolinhas.forEach(b => b.classList.remove('active'));
+        bolinha.classList.add('active');
+    });
+});
+
+// Deixe a primeira bolinha ativa por padrão
+bolinhas[0].classList.add('active');
 
 
 

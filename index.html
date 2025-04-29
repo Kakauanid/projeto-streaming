@@ -9,7 +9,31 @@
 </head>
    
 <body>
-    <div class="slider-gb">
+    
+    <div id="carrossel" class="carrossel">
+        <div class="carrossel-imagens">
+            <div class="slide">
+                <img src="imagem/header/missao-impossivel-fallout.jpg" alt="missao impossivel fallout">
+                <div class="texto-slide"><h2>Missão Impossível: Fallout</h2></div>
+            </div>
+            <div class="slide">
+                <img src="imagem/header/tokyo-ghoul.jpg" alt="tokyo ghoul">
+                <div class="texto-slide">Tokyo Ghoul</div>
+            </div>
+            <div class="slide">
+                <img src="imagem/header/transformers.jpg" alt="transformers">
+                <div class="texto-slide">Transformers</div>
+            </div>
+        </div>
+    
+        <div class="bolinhas">
+            <span class="bolinha" data-index="0"></span>
+            <span class="bolinha" data-index="1"></span>
+            <span class="bolinha" data-index="2"></span>
+        </div>
+    </div>
+    
+    
         
     </div>
     <div id="login">
@@ -21,7 +45,7 @@
             
             <div class="senha">
                 <input type="password" id="password" placeholder="Sobrenome">
-                <button type="button" onclick="mostrarSenha()" id="olho">
+                <button type="button" id="olho">
                     <img src="icone/olho.png" alt="olho" width="25">
                 </button>
             </div>
@@ -66,7 +90,7 @@
             <div class="menu-right">
                 <div class="barra">
                     <input type="text" id="searchInput" placeholder="Buscar...">
-                    <button onclick="buscar()">
+                    <button>
                         <img src="icone/lupa.png" alt="buscar" width="20">
                     </button>
                 </div>
@@ -198,10 +222,11 @@
     </div>
 
 
-    <script src="script.js" defer></script>
+   
 
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
