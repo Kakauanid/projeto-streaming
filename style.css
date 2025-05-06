@@ -206,10 +206,10 @@ nav.menu {
 
 #principal h3 {
     color: #f9f9f9;
-    font-family: var(--fonte1);
+    font-family: Arial, Helvetica, sans-serif;
     font-size:1.5em;
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 10px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.591);
 }
 
@@ -362,4 +362,13 @@ nav.menu {
 .me a:hover {
     color: #f9f9f9;
 }
-  
+
+.voltar-topo {
+    text-decoration: none;
+    color: #f9f9f9;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    width: 150px;
+
+}
+

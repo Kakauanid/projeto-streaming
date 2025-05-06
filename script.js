@@ -72,8 +72,15 @@ bolinhas.forEach((bolinha, index) => {
 // Deixe a primeira bolinha ativa por padrão
 bolinhas[0].classList.add('active');
 
+const btnTopo = document.getElementById('btnTopo');
 
-
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btnTopo.style.display = "block";
+    } else {
+        btnTopo.style.display = "none";
+    }
+});
 
 
 
