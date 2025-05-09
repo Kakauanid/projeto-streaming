@@ -43,7 +43,9 @@ body {
 #login h1 {
     font-family: var(--fonte2);
     font-size: 7em;
-    color:rgb(181, 7, 7);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.463), #e50914);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
     letter-spacing: 2px;
 }
@@ -55,10 +57,13 @@ body {
 }
 
 .login-box {
+    padding: 10px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    background-color: #212121;
 }
 
 .login-box input {
@@ -281,6 +286,7 @@ nav.menu {
     filter: brightness(60%);
 }
 
+
 .texto-slide {
     position: absolute;
     bottom: 20px;
@@ -371,4 +377,26 @@ nav.menu {
     width: 150px;
 
 }
+
+#filmes {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.filme {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.filme img {
+    width: 150px;
+    height: 200px;
+}
+
+.filme h3 {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 

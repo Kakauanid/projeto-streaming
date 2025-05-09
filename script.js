@@ -82,9 +82,3 @@ window.addEventListener("scroll", () => {
     }
 });
 
-
-
-
-
-
-
